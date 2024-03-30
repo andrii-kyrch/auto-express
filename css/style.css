@@ -1,0 +1,153 @@
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header {
+  position: relative;
+  max-width: 1600px;
+  padding-top: 47px;
+  padding-bottom: 112px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #ffffff;
+  background-image: url(../images/header/bg-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-top-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 105px;
+}
+
+.phone-link {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.page-title {
+  font-weight: 400;
+  font-size: 72px;
+  text-transform: uppercase;
+}
+
+.header-title {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.header-text {
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.header-btn {
+  display: block;
+  min-width: 250px;
+  height: 50px;
+  padding-left: 54px;
+  padding-right: 54px;
+  margin-bottom: 70px;
+  border: none;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #5a0d67;
+  transition: background-color 250ms linear, color 250ms linear;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  color: #5a0d67;
+  background-color: #ffffff;
+}
+
+.social-list {
+  display: flex;
+  column-gap: 10px;
+  margin-left: 66px;
+}
+
+.social-icon {
+  fill: #ffffff;
+}
+
+.header-img {
+  position: absolute;
+  bottom: -200px;
+  right: 200px;
+}
+
+/* ========= Section services ========= */
+
+.services {
+  padding-top: 300px;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #21062a;
+}
