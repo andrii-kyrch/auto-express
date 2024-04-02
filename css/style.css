@@ -50,7 +50,9 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1220px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -63,7 +65,13 @@ img {
   margin-right: auto;
   margin-left: auto;
   color: #ffffff;
-  background-image: url(../images/header/bg-header.jpg);
+  background-color: #21062a;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(33, 6, 42, 0.93),
+      rgba(33, 6, 42, 0.93)
+    ),
+    url(../images/header/bg-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -78,12 +86,14 @@ img {
 
 .phone-link {
   font-size: 36px;
+  line-height: 1.3;
   text-transform: uppercase;
 }
 
 .page-title {
   font-weight: 400;
   font-size: 72px;
+  line-height: 1.32;
   text-transform: uppercase;
 }
 
@@ -91,6 +101,7 @@ img {
   margin-bottom: 30px;
   font-weight: 400;
   font-size: 36px;
+  line-height: 1.36;
   text-transform: uppercase;
 }
 
@@ -98,27 +109,27 @@ img {
   margin-bottom: 30px;
   font-weight: 300;
   font-size: 18px;
-  color: #ffffff;
+  line-height: 1.5;
 }
 
-.header-btn {
-  display: block;
-  min-width: 250px;
-  height: 50px;
-  padding-left: 54px;
-  padding-right: 54px;
-  margin-bottom: 70px;
-  border: none;
+.btn-link {
+  display: inline-block;
+  max-width: 250px;
+  padding: 14px 54px;
   font-weight: 300;
   font-size: 14px;
+  line-height: 1.57;
   text-transform: uppercase;
-  color: #ffffff;
   background-color: #5a0d67;
   transition: background-color 250ms linear, color 250ms linear;
 }
 
-.header-btn:hover,
-.header-btn:focus {
+.header-btn {
+  margin-bottom: 70px;
+}
+
+.btn-link:hover,
+.btn-link:focus {
   color: #5a0d67;
   background-color: #ffffff;
 }
@@ -139,7 +150,7 @@ img {
   right: 200px;
 }
 
-/* ========= Section services ========= */
+/* =========== Section services =========== */
 
 .services {
   padding-top: 300px;
@@ -148,6 +159,9 @@ img {
 .section-title {
   font-weight: 400;
   font-size: 36px;
+  line-height: 1.36;
   text-transform: uppercase;
   color: #21062a;
 }
+
+/* ====END==== Section services ====END==== */
