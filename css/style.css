@@ -1,6 +1,9 @@
 body {
   font-family: "Oswald", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #2c2b2b;
+  line-height: 1.5;
   background-color: #ffffff;
 }
 
@@ -107,8 +110,6 @@ img {
 
 .header-text {
   margin-bottom: 30px;
-  font-weight: 300;
-  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -120,8 +121,10 @@ img {
   font-size: 14px;
   line-height: 1.57;
   text-transform: uppercase;
+  color: #ffffff;
   background-color: #5a0d67;
-  transition: background-color 250ms linear, color 250ms linear;
+  transition: background-color 250ms linear, color 250ms linear,
+    box-shadow 250ms linear;
 }
 
 .header-btn {
@@ -154,14 +157,128 @@ img {
 
 .services {
   padding-top: 300px;
+  padding-bottom: 50px;
 }
 
 .section-title {
+  position: relative;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.36;
   text-transform: uppercase;
   color: #21062a;
+}
+
+.section-title::after {
+  position: absolute;
+  top: 20px;
+  margin-left: 20px;
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: #21062a;
+}
+
+.services-title {
+  margin-bottom: 50px;
+}
+
+.services-container {
+  display: flex;
+  gap: 96px;
+}
+
+.services-content {
+  width: 504px;
+}
+
+.services-text-title {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #5a0d67;
+}
+
+.services-text {
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.services-text:nth-child(3) {
+  margin-bottom: 68px;
+}
+
+.services-text:nth-child(5) {
+  margin-bottom: 50px;
+}
+
+.services-btn {
+  position: relative;
+}
+
+.services-btn::after {
+  position: absolute;
+  right: -110px;
+  content: "ЖМИ";
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #c4c4c4;
+}
+
+.services-btn::before {
+  position: absolute;
+  top: 24px;
+  left: 240px;
+  content: "";
+  width: 80px;
+  height: 2px;
+  background-color: #c4c4c4;
+}
+
+.services-list {
+  counter-reset: my-counter;
+}
+
+.services-list-item {
+  position: relative;
+  width: 450px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 113px;
+  padding-right: 10px;
+  margin-bottom: 12px;
+  border: 2px solid #c4c4c4;
+  counter-increment: my-counter;
+  transition: width 250ms linear, border 250ms linear, color 250ms linear;
+}
+
+.services-list-item::before {
+  position: absolute;
+  left: 20px;
+  content: "0" counter(my-counter);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #c4c4c4;
+  transform: rotate(270deg);
+  transition: color 250ms linear;
+}
+
+.services-list-item:hover {
+  width: 500px;
+  border: 2px solid #5a0d67;
+}
+
+.services-list-item:hover .services-list-title {
+  color: #5a0d67;
+}
+.services-list-item:hover::before {
+  color: #5a0d67;
+}
+
+.services-list-title {
+  font-size: 24px;
+  line-height: 1.08;
 }
 
 /* ====END==== Section services ====END==== */
