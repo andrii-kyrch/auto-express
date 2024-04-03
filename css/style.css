@@ -282,3 +282,58 @@ img {
 }
 
 /* ====END==== Section services ====END==== */
+
+/* =========== Section Why us =========== */
+
+.why-us {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.why-us-container {
+  display: flex;
+  gap: 95px;
+}
+
+.why-us-content {
+  width: 100%;
+  color: #ffffff;
+}
+
+.why-us-title {
+  margin-left: 185px;
+  margin-bottom: 50px;
+}
+
+.why-us-list {
+  padding-top: 24px;
+  padding-left: 185px;
+  padding-bottom: 45px;
+  background-color: #21062a;
+}
+
+.why-us-item {
+  width: 316px;
+}
+
+.why-us-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.why-us-item-num {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.why-us-item-title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.why-us-item-text {
+  color: #c4c4c4;
+}
+
+/* ====END==== Section Why us ====END==== */
